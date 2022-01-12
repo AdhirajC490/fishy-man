@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene >
+      <a-a-assets>
+        <a-asset-item id="island" src="assets/island/scene.gltf"></a-asset-item>
+
+        <a-asset-item
+          id="treasure"
+          src="assets/treasure/model.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="fish"
+          src="assets/coral_fish/scene.gltf"
+        ></a-asset-item>
+       
+        <a-asset-item
+          id="scuba"
+          src="assets/scuba_driver/scene.gltf"
+        ></a-asset-item>
+      </a-a-assets>
+
+      <!--Calling the models-->
+
+        <a-entity
+          gltf-model="#island"
+          scale="1 1 1"
+          position="0 -10 -20"
+        ></a-entity>
+
+        <a-entity
+          gltf-model="#treasure"
+          position="0 -10 -10"
+          rotation="0 90 0"
+        ></a-entity>
+
+      <a-entity
+        gltf-model="#scuba"
+        scale="0.1 0.1 0.1"
+        position="5 0 15"
+        rotation="0 90 -20"        
+        scubu
+      >
+
+      <a-sky color = "#48bf91"></a-sky>
+
+    </a-scene>
+  </body>
+</html>
